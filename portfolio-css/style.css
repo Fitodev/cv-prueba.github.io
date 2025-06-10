@@ -1,0 +1,91 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+ 
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Diseño responsivo */
+    .card {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .col-sm-4 {
+        flex: 0 0 100%; 
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 1rem;
+      }
+
+      .col-md-12 {
+       
+        max-width: 100%;
+      }
+    }
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+header {
+    font-weight: 500;
+}
+
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: hsl(217, 88.2%, 90%);
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
