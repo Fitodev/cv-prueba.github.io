@@ -193,7 +193,7 @@
   background: linear-gradient(135deg, #ff4b2b, #ff416c);
 }
 
-/* FOOTER */
+
 footer {
   padding: 1em;
   background: linear-gradient(to right, #232526, #414345);
@@ -202,39 +202,12 @@ footer {
   font-size: 12px;
 }
 
-/* FIX DE CLASE INNECESARIA */
+
 .container .a {
   display: none;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-  .foto-perfil-header img {
-    width: 140px;
-    height: 140px;
-  }
 
-  .text-descriptivo {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .col {
-    padding: 1rem;
-  }
-
-  .card,
-  .col img {
-    width: 100%;
-    height: auto;
-  }
-
-  .descriptivo {
-    flex-direction: column;
-  }
-}
-
-/* FONDO EXTRA */
 .fondo {
   background: linear-gradient(to right, #bdc3c7, #2c3e50);
 }
